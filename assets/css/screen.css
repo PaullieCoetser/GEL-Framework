@@ -112,7 +112,7 @@ body {
  * Snippets of reusable CSS to develop faster and keep code readable
  * ----------------------------------------------------------------- */
 /* @end */body {
-  font: 62.5%/1 Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font: 62.5%/1 Arial, Helmet, Freesans, sans-serif;
 }
 h1,
 .super-h {
@@ -152,8 +152,14 @@ p,
 .copy {
   font-size: 1.3em;
   line-height: 1.2307692308em;
-  margin: 0.6153846154em 0;
+  padding: 0.6153846154em 0;
+  margin: 0;
+  display: block;
 }
 body {
-  background: url(../images/8px-baseline.png) top left;
+  background: url(../images/8px_baseline.png) top left;
+}
+.content {
+  margin: 0 auto;
+  width: 976px;
 }
