@@ -1,0 +1,18 @@
+/* @group 2.Mixins */
+/*
+ * Snippets of reusable CSS to develop faster and keep code readable
+ * ----------------------------------------------------------------- */
+
+// Set column width
+// TODO: Make fluid using %
+.columns(@columns) {
+  width: (@columns * @columnWidth)px;
+}
+
+// Font Size
+.fontSize(@desired, @base) {
+  font-size: (@desired / @base)em;
+}
+
+
+/* @end */
