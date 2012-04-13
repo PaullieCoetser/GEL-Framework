@@ -1,158 +1,125 @@
-body {
-	font : 62.5%/1 @arial;
+// Typography Base Mixins
+// ------------------------------------------------------------------------------ //
+.size48(@overide:@baseFontSize)
+{
+	font-size: (48/@overide) * 1em; 	// 48px
+	line-height: 1em;				// 48px
+	letter-spacing: -2px;
+	padding: (8/48)em 0;
 }
 
-h1, h2, h3, h4 {
+.size36(@overide: @baseFontSize)
+{
+	font-size: (36/@overide) * 1em;	// 36px
+	line-height: 1em;				// 36px
+	letter-spacing: -1px;
+	padding: (2/36) * 1em 0;
+}
+
+.size32(@overide:@baseFontSize)
+{
+	font-size: (32/@overide) * 1em; 	// 32px
+	line-height: 1em;				// 32px
+	letter-spacing: -1px;
+    padding: (4/32) * 1em 0px;
+
+}
+
+.size28(@overide:@baseFontSize)
+{
+	font-size: (28/@overide) * 1em; 	// 28px
+	line-height: 1em;				// 28px
+	letter-spacing: -1px;
+
+}
+
+.size24(@overide:@baseFontSize)
+{
+	font-size: (24/@overide) * 1em; 	// 24px
+	line-height: 1em;				// 24px
+	letter-spacing: -1px;
+}
+
+.size20(@overide:@baseFontSize)
+{
+	font-size: (20/@overide) * 1em; 	// 20px
+	line-height: 1em;				// 20px
+	letter-spacing: -1px;
+    padding: (6/20) * 1em 0px;
+}
+
+.size16(@overide:@baseFontSize)
+{
+	font-size: (16/@overide) * 1em; 		// 16px
+	line-height: (18/16) * 1em;				// 18px
+
+}
+
+.size14(@overide:@baseFontSize)
+{
+	font-size: (14/@overide) * 1em; 		// 14px
+	line-height: (18/14) * 1em;				// 18px
+
+}
+
+.size13(@overide:@baseFontSize)
+{
+	font-size: (13/@overide) * 1em;            // 13px
+	line-height: (16/13) *1em;                 // 16px
+    margin: 0;
+    padding: (12/13) * 1em 0 (4/13) * 1em;      // 12px 0 4px
+}
+
+.size12(@overide:@baseFontSize)
+{
+	font-size: (12/@overide) * 1em; 		// 13px
+	line-height: (16/12) * 1em;				// 16px
+
+}
+
+.size11(@overide:@baseFontSize)
+{
+	font-size: (11/@overide) * 1em; 		// 13px
+	line-height: (16/11) * 1em;				// 16px
+    text-transform: uppercase;
+    padding: (4/11) * 1em 0;                    //4px
+
+}
+
+
+body {
+	font : @baseFontSize_pec @arial;
+}
+
+h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	font-weight: bold;
 }
 
-.size36, .size32, .size28, .size24, .size20 
-{
-	letter-spacing: -1px;
-}
-.size48 
-{
-	font-size: 4.8em;
-	line-height: 48px;
-	letter-spacing: -2px;
-}
-
-.size36, h1 
-{
-	font-size: 3.6em;
-	line-height: 40px;
-	letter-spacing: -1px;
-}
-
-.size32, h2
-{
-	font-size: 3.2em;
-	line-height: 32px;
-	letter-spacing: -1px;
-	padding: 8px 0;
-}
-.size28
-{
-	font-size: 2.6em;
-	line-height: 24px;
-	letter-spacing: -1px;
-}
-
-.size24, #blq-content .principles-box h3, #blq-content .principles-box h2, h3#cultural-map-title 
-{
-	font-size: 2.4em;
-	line-height: 24px;
-	letter-spacing: -1px;
-}
-
-.size20, h3
-{
-	font-size: 2.0em;
-	line-height: 20px;
-	letter-spacing: -1px;
-	padding: 4px 0 8px;
-}
-
-#main-column  h4.size20
-{
-	font-size: 2.0em;
-	line-height: 20px;
-	letter-spacing: -1px;
-}
-
-.size18 
-{
-	font-size: 1.8em;
-	line-height: 16px;
-}
-
-.size16 
-{
-	font-size: 1.6em;
-	line-height: 16px;
-}
-
-.size13
-{
-	font-size: 1.3em;
-	line-height: 14px;
-	letter-spacing: 0;
-}
-
-.size11, h4
-{
-	font-size: 11px;
-	line-height: 16px;
-	margin: 4px 0;
-	text-transform: uppercase;
-}
-
-.size48, .size36 
-{
-	padding: 8px 0;
-}
-
-.size32, .size28, .size24, .size20, .size16 
-{
-	padding: 4px 0;
-}
-
-h1.first, h2.first, h3.first, h4.first
-{
-	margin-top:0;
+/* h1.first, h2.first, h3.first, h4.first, h5.first, h6.first {
 	padding-top: 0;
+} */
+
+h1 {
+	.size36();
+
 }
 
+h2 {
+	.size32();
 
-// h1,
-// .super-h {
-// 	font-size: 3.6em; 
-// 	font-weight: bold;
-// 	letter-spacing: -1px;
-// 	line-height: 40px;
-// 	text-rendering: optimizeLegibility;
-// 	margin-top: 0; // 2px;
-// 	margin-bottom:12px; // 9px;
-// 	padding: 0;
-// }
+}
 
-// h2,
-// .h {
-// 	font-size: 3.2em;
-// 	line-height: 32px;
-// 	letter-spacing: -1px;
-// 	padding-bottom: 0;
-// 	font-weight: bold;
-// 	text-rendering: optimizeLegibility;
-// 	margin: 8px 0 0;
-// }
+h3
+{
+    .size20();
+}
 
-// h3,
-// .sub-h {
-// 	font-size: 2.0em;
-// 	line-height: 20px;
-// 	letter-spacing: -1px;
-// 	font-weight: bold;
-// 	text-rendering: optimizeLegibility;
-// 	margin-top: 0; // 2px;
-// 	margin-bottom: 0; // 9px;
+h4
+{
+    .size11();
+}
 
-// }
-
-// h4,
-// .small {
-// 	font-size: 1.1em;
-// 	line-height: 1.4545454545em;
-// 	text-transform: uppercase;
-// 	margin-top: 0; // 2px;
-// 	margin-bottom: 0; // 10px;
-// }
-
-p,
-.copy {
-	font-size: 1.3em;
-	margin: 0;
-	padding: 3px 0 5px;
-	line-height: 16px;
+p {
+	.size13();
 }

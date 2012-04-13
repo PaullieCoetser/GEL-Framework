@@ -112,112 +112,52 @@ body {
  * Snippets of reusable CSS to develop faster and keep code readable
  * ----------------------------------------------------------------- */
 /* @end */body {
-  font: 62.5%/1 Arial, Helmet, Freesans, sans-serif;
+  font: 62.5% Arial, Helmet, Freesans, sans-serif;
 }
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   margin: 0;
   font-weight: bold;
 }
-.size36,
-.size32,
-.size28,
-.size24,
-.size20 {
-  letter-spacing: -1px;
-}
-.size48 {
-  font-size: 4.8em;
-  line-height: 48px;
-  letter-spacing: -2px;
-}
-.size36,
+/* h1.first, h2.first, h3.first, h4.first, h5.first, h6.first {
+	padding-top: 0;
+} */
 h1 {
   font-size: 3.6em;
-  line-height: 40px;
+  line-height: 1em;
   letter-spacing: -1px;
+  padding: 0.05555555555555555em 0;
 }
-.size32,
 h2 {
   font-size: 3.2em;
-  line-height: 32px;
+  line-height: 1em;
   letter-spacing: -1px;
-  padding: 8px 0;
+  padding: 0.125em 0px;
 }
-.size28 {
-  font-size: 2.6em;
-  line-height: 24px;
-  letter-spacing: -1px;
-}
-.size24,
-#blq-content .principles-box h3,
-#blq-content .principles-box h2,
-h3#cultural-map-title {
-  font-size: 2.4em;
-  line-height: 24px;
-  letter-spacing: -1px;
-}
-.size20,
 h3 {
-  font-size: 2.0em;
-  line-height: 20px;
+  font-size: 2em;
+  line-height: 1em;
   letter-spacing: -1px;
-  padding: 4px 0 8px;
+  padding: 0.3em 0px;
 }
-#main-column h4.size20 {
-  font-size: 2.0em;
-  line-height: 20px;
-  letter-spacing: -1px;
-}
-.size18 {
-  font-size: 1.8em;
-  line-height: 16px;
-}
-.size16 {
-  font-size: 1.6em;
-  line-height: 16px;
-}
-.size13 {
-  font-size: 1.3em;
-  line-height: 14px;
-  letter-spacing: 0;
-}
-.size11,
 h4 {
-  font-size: 11px;
-  line-height: 16px;
-  margin: 4px 0;
+  font-size: 1.1em;
+  line-height: 1.4545454545454546em;
   text-transform: uppercase;
+  padding: 0.36363636363636365em 0;
 }
-.size48,
-.size36 {
-  padding: 8px 0;
-}
-.size32,
-.size28,
-.size24,
-.size20,
-.size16 {
-  padding: 4px 0;
-}
-h1.first,
-h2.first,
-h3.first,
-h4.first {
-  margin-top: 0;
-  padding-top: 0;
-}
-p,
-.copy {
+p {
   font-size: 1.3em;
+  line-height: 1.2307692307692308em;
   margin: 0;
-  padding: 3px 0 5px;
-  line-height: 16px;
+  padding: 0.9230769230769231em 0 0.3076923076923077em;
 }
 body {
-  background: url(../images/8px_baseline_reversed.png) top left;
+  background: url(../images/8px_baseline.png) top left;
 }
 .content {
   margin: 0 auto;
